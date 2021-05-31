@@ -1,11 +1,10 @@
 # Battery Stats
 A module created for easily reading the current parameters of Battery in realtime.
 
-# Installation
+## Installation
 Clone this repository into the location you want to use, and directly use it as a module. (or download the zip, extract and directly use, as a module)
 
-# Usage
-
+## Usage
 ```python
 from batteryutils import Battery
 
