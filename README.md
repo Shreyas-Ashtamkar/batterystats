@@ -18,12 +18,13 @@ print(Battery())
 ##### outputs :
 
 ```shell
-  Battery Information
------------------------
-Date         : 2021-05-31
-Time         : 18:29:33
-Capacity     : 94
-Charge Now   : 2174000
+          Battery Information           
+----------------------------------------
+Date - Time  : 2021-06-01 | 12:44:06
+Battery Path : /sys/class/power_supply/BAT0
+Status       : Discharging
+Capacity     : 63%
+Charge Now   : 1469000
 Charge Full  : 2311000
 ```
 
