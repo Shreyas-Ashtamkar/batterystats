@@ -1,4 +1,4 @@
-from batteryutils import _Battery
+from batteryutils import Battery
 
 if __name__ == '__main__':
-    print(_Battery().all_stats)
+    print(Battery().all_stats)

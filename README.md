@@ -8,17 +8,23 @@ Clone this repository into the location you want to use, and directly use it as 
 
 ## Usage
 
-##### code
+##### code ( python3 )
 ```python
+# import batteryutils module
 from batteryutils import Battery
 
-print(Battery().all_stats)
+# create Battery Object for main battery and read all stats
+data_dict = Battery().all_stats
+
+# print only few params [date, time, capacity, charge_now, charge_full]
+print(data_dict)
+
 ```
 
 ##### outputs :
 
 ```shell
-   Battery Information
+  Battery Information
 -----------------------
 Date         : 2021-05-31
 Time         : 18:29:33

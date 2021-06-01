@@ -1,1 +1,1 @@
-from .batteryutils import _Battery as Battery
+from batteryutils import Battery
