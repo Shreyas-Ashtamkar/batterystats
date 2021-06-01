@@ -92,12 +92,13 @@ class Battery:
     
     def __str__(self) -> str:
         return \
-            f"  Battery Information\n"             \
-            f"-----------------------\n"           \
-            f"Date         : {self.date}\n"        \
-            f"Time         : {self.time}\n"        \
-            f"Capacity     : {self.capacity}\n"    \
-            f"Charge Now   : {self.charge_now}\n"  \
+            f"          Battery Information           \n"   \
+            f"----------------------------------------\n"   \
+            f"Date - Time  : {self.date} | {self.time}\n"   \
+            f"Battery Path : {self._path}\n"                \
+            f"Status       : {self.status}\n"               \
+            f"Capacity     : {self.capacity}%\n"            \
+            f"Charge Now   : {self.charge_now}\n"           \
             f"Charge Full  : {self.charge_full}\n" 
 
     
