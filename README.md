@@ -10,15 +10,9 @@ Clone this repository into the location you want to use, and directly use it as 
 
 ##### code ( python3 )
 ```python
-# import batteryutils module
 from batteryutils import Battery
 
-# create Battery Object for main battery and read all stats
-data_dict = Battery().all_stats
-
-# print only few params [date, time, capacity, charge_now, charge_full]
-print(data_dict)
-
+print(Battery())
 ```
 
 ##### outputs :
