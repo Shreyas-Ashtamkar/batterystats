@@ -1,5 +1,7 @@
-# Battery Stats
 ![Image](icon.png)
+
+# Battery Stats
+![Build Status](https://github.com/Shreyas-Ashtamkar/battery-stats/actions/workflows/mytests.yml/badge.svg)
 
 A [python3](https://www.python.org/) module created for easily reading the current parameters of Battery in realtime. It reads battery stats from `/sys/class/power_supply/` and returns. This module can be applied in a [verity of projects](#where-can-we-use-this). 
 
