@@ -27,6 +27,9 @@ class Battery:
     
     all_stats : dict
         Get all the statistics as a dicitonary
+    
+    main_stats : dict
+        Get only the main statistics as a dicitonary
 
 
     Methods
@@ -75,6 +78,23 @@ class Battery:
         Get all the Statistical parameters of the battery, as a dictionary
         '''
         data = {key : self._get(key) for key in self.params}
+        data["health"] = self.health
+        return data
+    
+    @property
+    def main_stats(self) -> dict:
+        '''
+        Get few of the main the Statistical parameters of the battery, as a dictionary
+        '''
+        data = {
+            "Date - Time"  : f"{self.date} | {self.time}",
+            "Battery Path" : f"{self._path}",
+            "Status"       : f"{self.status}",
+            "Capacity"     : f"{self.capacity}",
+            "Charge Now"   : f"{self.charge_now}",
+            "Charge Full"  : f"{self.charge_full}",
+        }
+
         data["health"] = self.health
         return data
 
