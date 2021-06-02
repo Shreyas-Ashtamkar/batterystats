@@ -1,1 +1,1 @@
-from batterystats import Battery
+from .batterystats import Battery
