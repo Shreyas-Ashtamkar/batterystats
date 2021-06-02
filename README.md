@@ -12,7 +12,7 @@ Clone this repository into the same folder you want to write code in, and direct
 
 ##### code ( python3 )
 ```python
-from batterystatss import Battery
+from batterystats import Battery
 
 print(Battery())
 ```
