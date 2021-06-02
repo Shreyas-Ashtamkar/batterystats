@@ -1,5 +1,5 @@
 # just for showing passed
-from batterystats import Battery
+from .batterystats import Battery
 
 def test_instance():
     assert isinstance(Battery(), Battery)
