@@ -1,5 +1,5 @@
 from os import listdir as ls
-from os.path import isfile
+from os.path import isfile, exists
 from datetime import datetime
 
 class Battery:
@@ -42,6 +42,10 @@ class Battery:
             The Battery Number to create object of. Defaults to 0.
         '''
         self._path    = "/sys/class/power_supply/BAT"+str(no)
+
+        if not exists(self._path):
+            self._path = "/sys/class/power_supply/AC"
+
         self.params = []
 
         for f in ls(self._path):
