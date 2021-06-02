@@ -48,9 +48,10 @@ class Battery:
 
         self.params = []
 
-        for f in ls(self._path):
-            if isfile(self._path + "/" + f) and f!= "uevent":
-                self.params.append(f)
+        if exists(self._path):
+            for f in ls(self._path):
+                if isfile(self._path + "/" + f) and f!= "uevent":
+                    self.params.append(f)
 
         self.params.sort()
     @property
