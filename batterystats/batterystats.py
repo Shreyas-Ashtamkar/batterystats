@@ -64,6 +64,10 @@ class Battery:
     @property
     def time(self) -> str:
         return str(datetime.now().time()).split('.')[0]
+    
+    @property
+    def timestamp(self) -> str:
+        return str(datetime.timestamp(datetime.now()))
 
     @property
     def health(self) -> int:
