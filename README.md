@@ -34,3 +34,4 @@ Charge Full  : 2311000
 + Get battery stats on command line
 + Scripts ( Alert/Report generation )
 + Other Python Applicaitons
+ 
